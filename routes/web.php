@@ -8,4 +8,4 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'AdminController@index')->name('admin.index');
 
-Route::get('/post', 'PostController@show')->name('post');
+Route::get('/post/{post}', 'PostController@show')->name('post');
